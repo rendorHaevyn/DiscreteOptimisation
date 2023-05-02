@@ -9,3 +9,13 @@ The course is described on [Coursera - Discrete Optimisation](https://www.course
 * Local Search (LS)
 * Linear Programming (LP)
 * Mixed Integer Programming (MIP)
+
+## Environment
+
+Created using conda 4.10.3, with the following command:
+
+* Create: `conda env create --file environment.yml`
+* Activate: `conda activate discretOpt`
+* Update / install: `conda env update --name discreteOpt --file environment.yml`
+* Export: `conda env export --name discreteOpt --file environment.yml`
+* Specific package install: `conda install <<pkg_name>>`
