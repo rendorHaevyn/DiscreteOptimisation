@@ -10,6 +10,10 @@ from urllib.parse import urlparse, urlencode
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError
 
+# set relative directory
+from Week1 import setwd
+setwd()
+
 # Python 3, backward compatibility with unicode test
 unicode = type(str)
 
@@ -18,10 +22,6 @@ submitt_url = 'https://www.coursera.org/api/onDemandProgrammingScriptSubmissions
 
 Metadata = namedtuple("Metadata", ['assignment_key', 'name', 'part_data'])
 Part = namedtuple("Part", ['id', 'input_file', 'solver_file', 'name'])
-
-# set CWD
-cwd = '/'.join(__file__.split('/')[:-1])
-os.chdir(cwd)
 
 
 def load_metadata(metadata_file_name='_coursera'):
